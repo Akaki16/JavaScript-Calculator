@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: whitesmoke;
+    font-family: sans-serif;
+}
+
+header {
+    transform: translateY(30px);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+header .underline {
+    transform: translateY(10px);
+    width: 450px;
+    margin: 0 auto;
+    border: 2px solid #333;
+}
+
+main .fields {
+    transform: translateY(90px);
+    text-align: center;
+}
+
+main .fields input {
+    margin: 10px;
+    border: none;
+    outline: none;
+    border: 1px solid #333;
+    padding: 8px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+}
+
+main .fields div button {
+    transform: translateY(20px);
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 220px;
+    background: slategrey;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main .fields div button:hover {
+    opacity: 0.9;
+}
+
+.result {
+    transform: translateY(190px);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.err-message {
+    background: rgb(224, 72, 72);
+    width: 500px;
+    padding: 7px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 4px;
+    color: #fff;
+}
+
+@media (max-width: 636px) {
+    header .underline {
+        width: 90%;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header .underline {
+        width: 90%;
+    }
+
+    main .fields input {
+        width: 90%;
+    }
+
+    main .fields div button {
+        width: 90%;
+    }
+}
